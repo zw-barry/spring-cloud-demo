@@ -1,0 +1,11 @@
+server:
+  port: 8763
+
+eureka:
+  instance:
+    hostname: node03
+#    prefer-ip-address: true
+#    ip-address: 127.0.0.1
+#  client:
+#    serviceUrl:
+#      defaultZone: http://node01:8761/eureka/,http://node02:8762/eureka/

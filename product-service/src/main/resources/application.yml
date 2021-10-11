@@ -1,15 +1,16 @@
-#server:
-#  port: 8761
+server:
+  port: 8081
+spring:
+  application:
+    name: product-service
+
 eureka:
   instance:
+    ## 向客户端注册时，会携带上这两个信息，
     lease-expiration-duration-in-seconds: 10 # 10秒即过期
     lease-renewal-interval-in-seconds: 5 # 5秒一次心跳
-  server:
-    eviction-interval-timer-in-ms: 10000
+    hostname: localhost
   client:
     serviceUrl:
       defaultZone: http://node01:8761/eureka/,http://node02:8762/eureka/,http://node03:8763/eureka/
 
-spring:
-  application:
-    name: eureka-server

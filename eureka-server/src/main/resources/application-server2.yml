@@ -1,0 +1,13 @@
+server:
+  port: 8762
+
+eureka:
+  instance:
+    hostname: node02
+    #  when the application registers with eureka, it uses its IP address rather than its hostname
+#    prefer-ip-address: true
+# 显示指定自己的ip
+#    ip-address: 127.0.0.1
+#  client:
+#    serviceUrl:
+#      defaultZone: http://node01:8761/eureka/,http://node03:8763/eureka/
